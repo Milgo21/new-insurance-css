@@ -32,7 +32,7 @@
               <p>on a small scale just do not act that way</p>
               <div class="get-learn">
                   <button type="submit" id="quote">Get Quote Now</button>
-                  <button type="submit" >Learn More</button>
+                  <button id="learn"type="submit" >Learn More</button>
               </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
                 <p>the quick fox jumps over</p>
                 <p>the lazy dog</p>
             </div>
-            <div class="peace-of-mind">
+            <div class="peace-of-mind peace-blue">
               <ion-icon name="people-outline"></ion-icon>
                 <h4>100% Satisfaction</h4>
                 <p>the quick fox jumps over</p>
@@ -253,7 +253,7 @@
       <!-- Page four starts here -->
       <div class="page-four">
         <div class="page-four-text">
-          <h3>We Have Branches <br>All Over The World</h3>
+          <h2>We Have Branches <br>All Over The World</h2>
           <p>The gradual accumulation about atomic and</p>
           <p>small-scale behaviour during the first quarter of the 20th</p>
           <p>century which gave some indications about how small things</p>
@@ -277,21 +277,37 @@
               <input type="text" id="username" name="username" placeholder="Full Name*"><br>
               <label for="usernname">Email Address</label><br>
               <input type="text" id="username" name="username" placeholder="example@email.com*"><br>
-              <label for="department">Department</label><br>
-              <input type="text" list="cars" name="department" placeholder="Please Select">
-              <datalist id="department" name="department">
+              <label for="department">Department*</label><br>
+              <!-- <input type="text" list="cars" name="department" placeholder="Please Select"> -->
+              <select id="department" name="department">
                 <option value="health">Health</option>
                 <option value="fire">Motor</option>
                 <option value="fire">Travel</option>
                 <option value="fire">Fire</option>
-              </datalist>
-              
+              </select>
+              <label for="time">Time*</label><br>
+              <!-- <input type="text" list="cars" name="department" placeholder="Please Select"> -->
+              <select id="time" name="time">
+                <option value="health">Health</option>
+                <option value="fire">Motor</option>
+                <option value="fire">Travel</option>
+                <option value="fire">Fire</option>
+              </select>
+                  <br>
+                  <br>
+              <button>
+                Book An Appointment
+              </button>
             </form>
           </div>
         </div>
         <div class="consulting">
+          <div>
           <p><h4>Consulting agency for your bussiness</h4><br>the quick fox jumps over the lazy dog</p>
+        </div>
+        <div>
           <button>Contact Us</button>
+        </div>
         </div>
         <div class="company-info">
           <div class="about-us">
@@ -324,21 +340,24 @@
           </div>
           <div class="get-in-touch">
             <h4>Get In Touch</h4><br>
-            <p>About Us</p><br>
-            <p>Carrier</p><br>
-            <p>We are hiring</p><br>
-            <p>Blog</p>
+            <p><ion-icon name="call-outline"></ion-icon> (+254) 654</p><br>
+            <p><ion-icon name="location-outline"></ion-icon> Carrier</p><br>
+            <p><ion-icon name="mail-outline"></ion-icon>noma@gmail.com</p><br>
           </div>
         </div>
     </div>
-    <!-- <footer>
+    <footer>
       <div class="footer-text">
         <p>Made with Love By Felix All rights reserved </p>
       </div>
       <div class="social-icons">
-
+        <span>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </span>
       </div>
-    </footer> -->
+    </footer>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
