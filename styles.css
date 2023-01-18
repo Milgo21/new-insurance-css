@@ -262,9 +262,55 @@
     height: 90vh;
     background-color: #252b42;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
-.page-four > img{
-    width: 40%;
-    min-height: 30%;
+.page-four-image{
+    /* height: 20%; */
+    margin-top: -10rem;
+    width: 50%;
+    height: 50%;
+    border: 2px solid red;
+    padding: 3rem 5rem 3rem 5rem;
+}
+.page-four-text{
+    width: 50%;
+    height: 50%;
+    margin-top: -10rem;
+    border: 2px solid red;
+    padding: 3rem 5rem 3rem 5rem;
+    color: antiquewhite;
+
+}
+.page-four-image > img{
+    height: 100%;
+    width: 100%;
+}
+.last-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    border: 2px solid red;
+}
+.company-info{
+    display: flex;
+}
+.consulting{
+    display: flex;
+}
+.contact-form{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+}
+.appointment-image > img{
+    height: 100%;
+    width: 100%;
+
 }
