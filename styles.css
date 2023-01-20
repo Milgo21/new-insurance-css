@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -31,18 +32,22 @@
 .navbar{
     display: flex;
     box-sizing: border-box;
+    gap: 2rem;
     /* padding: 2rem; */
     /* gap: 0.8rem; */
 }
 .navbar a, .login a{
     text-decoration: none;
-    font: 0.5rem;
+    font-size:1rem;
     color: azure;
+    cursor: grab;
 }
 .login button{
-    background-color:aqua;
-    padding: 0.5rem;
-    border-color: aqua;
+    background-color: #23a6f0;
+    padding: 0.4rem;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
 
 }
 .cover1-content{
@@ -52,6 +57,10 @@
     align-items: center;
     gap: 1rem;
     color: aliceblue;
+}
+.cover1-content h2{
+    font-size:4rem;
+    text-align: center;
 }
 .get-learn button{
     height: 3rem;
@@ -63,7 +72,7 @@
     font-size: 0.9rem;
 }
 .get-learn #quote{
-    background-color: aqua;
+    background-color: #23a6f0;
     border: none;
 }
 .get-learn #learn{
@@ -73,8 +82,8 @@
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background-image: url("./images/hero.png");
-    opacity: 0.9;
+    background-image:linear-gradient(rgba( 0,0,0,0.6) ,rgba( 0,0,0,0.6)), url(./images/hero.png);
+    /* background-image: url("./images/hero.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -141,6 +150,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 3rem;
+    margin: 1rem;
 }
 .industry h2, .pricing-title h2, .page-four-text h2{
     font-weight: 800;
@@ -246,6 +256,7 @@
     padding: 1.5rem;
     justify-content: space-evenly;
     border-radius: 0.5rem;
+    gap: 1rem;
 }
 .standard{
     width: 20%;
@@ -260,11 +271,13 @@
     border-radius: 0.5rem;
     color: antiquewhite;
     margin-top: -3rem;
+    gap: 1rem;
 }
 .free-content, .standard-content, .premium-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
 }
 .price-cost{
@@ -330,7 +343,6 @@
     /* border: 2px solid yellow; */
 }
 .company-info, footer{
-    box-sizing: border-box;
     /* width: 100%; */
     box-sizing: border-box;
     display: flex;
@@ -402,7 +414,7 @@
     margin-bottom: 2rem;
 }
 .peace-of-mind ion-icon, .peace-of-mind2 ion-icon{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #2daaf1;
 }
 .peace-blue{
@@ -436,7 +448,7 @@
         font-family: 'Montserrat';
         font-style: normal;
     }
-    .company-info, footer{
+    .company-info{
         /* margin: 3rem 9rem; */
         margin: 0;
         flex-direction: column;
@@ -445,6 +457,14 @@
         gap: 1rem;
         width: 100%;
         text-align: center;
+    }
+    .footer{
+        /* margin: 3rem 9rem; */
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
     }
     .contact-form{
     margin: 0;
@@ -475,14 +495,85 @@
         margin: 0.5rem 0.5rem;
         /* border: 2px solid red; */
         padding: auto;
+        text-align: center;
         /* color: antiquewhite; */
     
+    }
+    .page-four-text h2 {
+        margin-bottom: 2rem;
+
     }
     .appointment-image{
         width: 50%;
     }
     .consulting{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         margin: 2rem 1rem;
+        gap: 2rem;
     }
-    
+    .navbar{
+        gap:1rem;
+    }
+    .top-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 10px;
+    }
+    .cover1-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-cards2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .peace-of-mind2{
+        height: 15rem;
+    }
+    .industry{
+        margin-top: -2rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .users{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 30%;
+    }
+    .user-text{
+        text-align: center;
+    }
+    .vector>img{
+        height: 1rem;
+        width: 2rem;
+    }
+    .subscribe-newsletter{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    .pricing-title{
+        /* margin-top: -2rem; */
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .free,.premium,.standard{
+        height: 30rem;
+    }
+    .premium-middle p, .free-middle p, .standard-middle p{
+        background-color: red;
+
+    }
 }
