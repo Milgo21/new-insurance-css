@@ -342,7 +342,7 @@
     /* gap: 5rem; */
     /* border: 2px solid yellow; */
 }
-.company-info, footer{
+.company-info{
     /* width: 100%; */
     box-sizing: border-box;
     display: flex;
@@ -351,6 +351,16 @@
     /* border: 2px solid yellow; */
     /* gap: 2rem; */
     /* padding: 30px 30px 30px 30px; */
+}
+.footer{
+        /* width: 100%; */
+        box-sizing: border-box;
+        display: flex;
+        margin: 3rem 9rem;
+        justify-content: space-between;
+        /* border: 2px solid yellow; */
+        /* gap: 2rem; */
+        /* padding: 30px 30px 30px 30px; */
 }
 .consulting{
     display: flex;
@@ -460,11 +470,13 @@
     }
     .footer{
         /* margin: 3rem 9rem; */
-        margin: 0;
+        /* margin: 0; */
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
+        /* align-items: center; */
+        /* box-sizing: border-box; */
+        /* margin: 3px 9px; */
+        justify-content: space-between;
     }
     .contact-form{
     margin: 0;
@@ -573,7 +585,25 @@
         height: 30rem;
     }
     .premium-middle p, .free-middle p, .standard-middle p{
-        background-color: red;
+        /* background-color: red; */
+        padding: 0.3rem;
+    }
+    .user1,.user2,.user3{
+        padding: 10px;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .social-icons span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
     }
+    .cover1-content h2{
+        font-size:3.5rem;
+        text-align: center;
+    }
+
+    
 }
